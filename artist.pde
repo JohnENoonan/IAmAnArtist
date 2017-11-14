@@ -34,7 +34,7 @@ public class Artist{
       textSize(31);
       textFont(expressions.get((int)random(expressions.size()-1)));
       fill(color((random(1) > .5) ? random(30) : random(240, 255)));
-      translate(random(-50,width), random(height));
+      translate(random(-90,width), random(height));
       rotate(random(radians(-10), radians(10)));
       text(self.getString((int)random(thoughts)), 0, 0);
     popMatrix();
