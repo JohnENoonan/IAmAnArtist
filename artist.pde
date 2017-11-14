@@ -14,7 +14,7 @@ public class Artist{
     self = mind.getJSONArray("congrats");
     thoughts = self.size();
     JSONArray means = mind.getJSONArray("means");
-    for (int i = 0; i < mind.size(); ++i){
+    for (int i = 0; i < means.size(); ++i){
       expressions.add(loadFont(means.getString(i))); 
     }
   }
@@ -29,7 +29,6 @@ public class Artist{
   
   public void congratulations(){
     fill(255);
-    //textFont(loadFont(expressions[(int)random(expressions.length - 1)]));
     pushMatrix();
       textSize(31);
       textFont(expressions.get((int)random(expressions.size()-1)));
