@@ -22,6 +22,5 @@ public class Idea{
       fill(random(255), random(255), random(255), 50); 
       rect(0, 0, random(25,50), random(25,50)); 
     popMatrix();
-    //rect(x,y,2*x,2*y);
   }
 }
